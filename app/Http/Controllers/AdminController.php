@@ -163,12 +163,12 @@ class AdminController extends Controller
     public function store()
     {
         $this->validate(request(),[
-            'title_en'=>'required',
+            'title'=>'required',
             'description'=>'required',
             'image'=>'required'
              ]);
         $serv=new Arabicservice;
-        $serv->title_en=request('title_en');
+        $serv->title=request('title');
         $serv->description=request('description');
         $image=request()->image;
         $imageName = md5(uniqid(rand() * (time()))) . '.' . $image->getClientOriginalExtension();
@@ -176,7 +176,7 @@ class AdminController extends Controller
         Image::make($image)->save($savePath, 100);
         $fullImagePath =$imageName;
         $serv->image=$fullImagePath;
-        $serv->arabicmenu_id=Arabicmenu::where('title_en',request('submenu'))->first()->id;
+        $serv->arabicmenu_id=Arabicmenu::where('title',request('submenu'))->first()->id;
         $serv->save();
         session()->flash('message','Page Added!');
         

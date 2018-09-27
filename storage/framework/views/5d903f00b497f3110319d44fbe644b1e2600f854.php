@@ -37,9 +37,8 @@
       
     <?php endif; ?>
     <?php if($ext=='mp4'): ?>
-    <video controls style="display:block;width:100%;height:361px;margin:0;">
-        <source src="<?php echo e(asset('storage/uploads/'.$slide->image)); ?>" type="video/mp4">
-      </video>
+    
+    <iframe width="100%" height="350" src="https://www.youtube.com/embed/djUCyQeLfzE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>   
       <?php else: ?>
       <img src="<?php echo e(asset('storage/uploads/'.$slide->image)); ?>"
                                 data-bgposition="center center"
