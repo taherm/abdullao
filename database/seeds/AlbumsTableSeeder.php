@@ -4,76 +4,63 @@ use Illuminate\Database\Seeder;
 
 class AlbumsTableSeeder extends Seeder
 {
+
     /**
-     * Run the database seeds.
+     * Auto generated seed file
      *
      * @return void
      */
     public function run()
     {
-        DB::table('albums')->insert([
+        
 
-            [
-                
-                'image' =>  '5bb91e1694f038fa0257060f7eb9117e.jpeg',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                
-                'image' =>  '66c143e3ce2f7c2ed8aaf4dbd7802076.jpeg',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                
-                'image' =>  '1c8e3bec3ab1557caa9dbe1ae3f3a50a.jpeg',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                
-                'image' =>  'ab70c1a27b956dbd0e28aa923cea5fb8.jpeg',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                
-                'image' =>  '7c847c25e3e37bf2691ddba157dde267.jpeg',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                
-                'image' =>  'f08e61c7d8e09cd4a453cf2e209ed8a5.jpeg',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                
-                'image' =>  '247788c3b8b58933510c8860e4b68ab0.jpeg',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                
-                'image' =>  '8f5b5693a6554c71f74540943b63a3b8.jpeg',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                
-                'image' =>  '3d27a9de6a70ebed8078ae56da1af75e.jpeg',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                
-                'image' =>  'e33d43030ced599648bca375c643b4c9.jpeg',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ]
-
-        ]);
+        \DB::table('albums')->delete();
+        
+        \DB::table('albums')->insert(array (
+            0 => 
+            array (
+                'id' => 11,
+                'image' => '5105746f769b0f89a31cf7121c66d105.jpg',
+                'created_at' => '2018-09-29 13:25:09',
+                'updated_at' => '2018-09-29 13:25:09',
+            ),
+            1 => 
+            array (
+                'id' => 12,
+                'image' => '484017b96be9079d309dee3da57037bf.jpg',
+                'created_at' => '2018-09-29 13:25:18',
+                'updated_at' => '2018-09-29 13:25:18',
+            ),
+            2 => 
+            array (
+                'id' => 13,
+                'image' => '2726965797e044c26e153dcd8ccdcef2.jpg',
+                'created_at' => '2018-09-29 13:25:21',
+                'updated_at' => '2018-09-29 13:25:21',
+            ),
+            3 => 
+            array (
+                'id' => 14,
+                'image' => '6c2da339d11cb5657bf2cc9550905293.jpg',
+                'created_at' => '2018-09-29 13:25:24',
+                'updated_at' => '2018-09-29 13:25:24',
+            ),
+            4 => 
+            array (
+                'id' => 15,
+                'image' => '3e0f618234524c2c8578c58be9a27865.jpg',
+                'created_at' => '2018-09-29 13:25:27',
+                'updated_at' => '2018-09-29 13:25:27',
+            ),
+            5 => 
+            array (
+                'id' => 16,
+                'image' => 'e627d06d2ca3f106ded509c6abaf3a3a.jpg',
+                'created_at' => '2018-09-29 13:25:30',
+                'updated_at' => '2018-09-29 13:25:30',
+            ),
+        ));
+        
+        
     }
 }
