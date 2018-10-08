@@ -56,11 +56,12 @@
   </div>
  <br>
   <button type="submit" class="btn btn-primary">ارسال</button>
+
 </form>
 </div>
    
 </div>
     </div>
-
+    <br>  <br>
 @endsection
   

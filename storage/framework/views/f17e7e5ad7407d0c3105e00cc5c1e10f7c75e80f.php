@@ -8,10 +8,12 @@
   <link rel="stylesheet" href="<?php echo e(asset('/css/bootstrap-rtl.min.css')); ?>">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="<?php echo e(asset('/css/style.css')); ?>">
+  <link rel="stylesheet" href="<?php echo e(asset('/css/modal.css')); ?>">
   <link href="https://fonts.googleapis.com/css?family=Cairo:600" rel="stylesheet"> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="<?php echo e(asset('/js/bootstrap.min.js')); ?>"></script>
   <script src="<?php echo e(asset('/js/instafeed.min.js')); ?>"></script>
+  <script src="<?php echo e(asset('/js/modal.js')); ?>"></script>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 <div id="container">
@@ -113,12 +115,21 @@
 									<i class="fa fa-instagram"></i>
 								</a>
               </p> 
+             
               
 								
               
             <a class="up-arrow pull-right" href="#myPage" style="padding:10px" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
-  </a><br><br>
+  </a>
+  
+  <p class="pull-right" style="padding:10px">Developed by <a href="http://ideasowners.net/">
+								IdeasOwners    
+              
+								
+								</a>
+              </p> 
+  <br><br>
   
   </div>
 </footer>

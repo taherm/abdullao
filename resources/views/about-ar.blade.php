@@ -11,7 +11,7 @@
               <li class="active">
                 <h2>
 
-                 عن مبارك السماعيل
+                 عن عبدالله العثمان
 
 
 
@@ -28,8 +28,7 @@
     <div class="container">
     <div class="row">
     <div class="col-lg-8 text-justify" style="padding-left:100px;">
-  <h5>  مبارك عبدالحكيم السماعيل
-</h5>
+  <h5>  عبدالله العثمان</h5>
 
 
 
