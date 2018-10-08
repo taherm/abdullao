@@ -38,9 +38,17 @@
   <div class="form-group">
     <label for="exampleSelect1">قم بإختيار الدورة التدريبية</label>
     <select class="form-control" id="exampleSelect1" name="select">
-      <option>ادارة المشاريع  الصغيرة والمتوسطة</option>
-      <option>ادارة الوقت</option>
-      <option>التسويق الإلكتروني</option>
+      <option>
+
+صناعة المال من الأعمال
+
+</option>
+      <option>
+
+خطط لمشروعك
+
+</option>
+
      
     </select>
   </div>
