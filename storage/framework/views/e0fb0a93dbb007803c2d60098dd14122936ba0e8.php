@@ -1,60 +1,49 @@
 <?php $__env->startSection('content'); ?>
-<section id="inner-headline">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-7">
-        <ul class="breadcrumb">
+    <section id="inner-headline">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <ul class="breadcrumb">
 
-          <li class="active">
-            <h2>
-              البوم الصور
-            </h2>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-<br>
-
-
-
-
-<div class="container">
-  <?php
-  $numOfCols = 3;
-  $rowCount = 0;
-  $bootstrapColWidth = 12 / $numOfCols;
-  ?>
-  <div class="row">
-
-    <?php $__currentLoopData = $album; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $image): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-
-    <div class="col-md-<?php echo $bootstrapColWidth; ?>">
-      <div class="thumbnail">
-
-        <img id="myImg" src="<?php echo e(asset('uploads/'.$image->image)); ?>" style="width:100%">
-        <div id="myModal" class="modal">
-
-          <!-- The Close Button -->
-          <span class="close">&times;</span>
-
-          <!-- Modal Content (The Image) -->
-          <img class="modal-content" id="img01">
-
-          <!-- Modal Caption (Image Text) -->
-          <div id="caption"></div>
+              <li class="active">
+                <h2>
+                البوم الصور
+                </h2>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <?php
-    $rowCount++;
-    if($rowCount % $numOfCols == 0) echo '</div>
-  <div class="row">';
+    </section>
+    <br>
 
-    ?>
-    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-  </div>
+
+
+
+ <div class="container">
+<?php 
+$numOfCols = 3;
+$rowCount = 0;
+$bootstrapColWidth = 12 / $numOfCols;
+?>
+<div class="row">
+
+<?php $__currentLoopData = $album; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $image): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+ 
+        <div class="col-md-<?php echo $bootstrapColWidth; ?>">
+            <div class="thumbnail">
+              
+        <img src="<?php echo e(asset('uploads/'.$image->image)); ?>" style="width:100%">
+     
+              </div>
+        </div>
+<?php
+    $rowCount++;
+    if($rowCount % $numOfCols == 0) echo '</div><div class="row">';
+
+?>
+<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+</div>
 </div>
 
 
@@ -63,7 +52,8 @@
 
 
 
-
+    
 
 <?php $__env->stopSection(); ?>
+  
 <?php echo $__env->make('layouts.master-ar', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
